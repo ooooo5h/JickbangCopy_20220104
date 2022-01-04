@@ -43,6 +43,10 @@ class RoomAdapter(
 
                 val myIntent = Intent(mContext, ViewRoomDetailActivity::class.java)
 
+
+//                어떤 방인지 데이터를 들고, 화면을 이동하자(putExtra)
+                myIntent.putExtra("room", data)
+
 //                화면의 도움을 받아 -> 다른 화면으로 이동하는 startActivity
                 mContext.startActivity(myIntent)
 
